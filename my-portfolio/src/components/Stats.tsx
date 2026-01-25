@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 const stats = [
   { label: 'Projects shipped', value: '7+' },
   { label: 'Years learning/building', value: '2+' },
-  { label: 'Happy clients/teams', value: '5+' },
+  { label: 'Hours Worked', value: '5K+' },
 ]
 
 export default function Stats() {

@@ -1,10 +1,26 @@
+import { motion } from 'framer-motion'
+
 export default function Footer() {
   return (
-    <footer className="border-t border-white/10 bg-black/20 backdrop-blur">
-      <div className="mx-auto max-w-6xl px-5 py-10 text-sm text-white/55 flex flex-col sm:flex-row gap-2 sm:items-center sm:justify-between">
-        <p>© {new Date().getFullYear()} Your Name. All rights reserved.</p>
-        <p className="text-white/45">Built with React + Vite + Tailwind + Three.js.</p>
+    <motion.footer
+      initial={{ opacity: 0, y: 16 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.6 }}
+      transition={{ duration: 0.6, ease: 'easeOut' }}
+      className="mt-24 border-t border-white/10"
+    >
+      <div className="mx-auto max-w-6xl px-6 py-14 text-center">
+        {/* Saying */}
+        <p className="text-base md:text-lg font-medium text-white/80">
+          Designed & built by{' '}
+          <span className="text-white font-semibold">Kaveesha</span>
+        </p>
+
+        {/* Copyright */}
+        <p className="mt-4 text-sm text-white/45">
+          © {new Date().getFullYear()} All rights reserved.
+        </p>
       </div>
-    </footer>
+    </motion.footer>
   )
 }

@@ -7,13 +7,13 @@ export type ExperienceItem = {
 
 export const experience: ExperienceItem[] = [
   {
-    role: 'Frontend Developer',
-    company: 'Freelance / Personal Projects',
+    role: 'Frontend-Focused Full-Stack Developer',
+    company: 'Freelance & Independent Projects',
     time: '2024 — Present',
     bullets: [
-      'Built responsive React UIs with reusable components.',
-      'Implemented motion + micro-interactions for a premium feel.',
-      'Focused on performance and accessibility.',
+      'Designed and built production-ready web applications with a strong focus on frontend architecture, interaction design, and maintainable UI systems.',
+      'Delivered full-stack features end-to-end while specializing in high-quality frontend experiences using React, Tailwind CSS, and modern tooling.',
+      'Optimized performance, accessibility, and responsiveness across devices to ensure polished, user-friendly interfaces.',
     ],
   },
 ]

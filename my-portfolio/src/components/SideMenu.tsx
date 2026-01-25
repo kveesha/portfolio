@@ -7,10 +7,9 @@ type SideMenuProps = {
 }
 
 const socials = [
-  { label: "GitHub", href: "#" },
-  { label: "LinkedIn", href: "#" },
-  { label: "Instagram", href: "#" }
-  
+  { label: "GitHub", href: "https://github.com/kveesha" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/kaveesha-wijayathilaka " },
+  { label: "Instagram", href: "https://www.instagram.com/kveesha._" },
 ]
 
 const menu = [
@@ -78,6 +77,7 @@ export default function SideMenu({ open, onClose }: SideMenuProps) {
 
               data-cursor="pointer"
               aria-label="Close menu"
+               onClick={onClose}
               className="absolute right-5 top-5 text-white/70 hover:text-white"
             >
               <span className="text-3xl leading-none">×</span>
@@ -126,10 +126,10 @@ export default function SideMenu({ open, onClose }: SideMenuProps) {
               <div className="pt-10">
                 <p className="text-xs tracking-[0.28em] text-white/40">GET IN TOUCH</p>
                 <a
-                  href="mailto:you@example.com"
+                  href="mailto:kaveeshawijayathilaka219@gmail.com"
                   className="mt-3 block text-white/75 hover:text-white transition"
                 >
-                  you@example.com
+                  kaveeshawijayathilaka219@gmail.com
                 </a>
               </div>
             </div>
