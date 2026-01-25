@@ -9,7 +9,7 @@ import {
   SiNodedotjs,
   SiExpress,
   SiMongodb,
-  SiPostgresql,
+ 
   SiMysql,
   SiGit,
   SiGithub,
@@ -55,7 +55,7 @@ const groups: Group[] = [
     title: "DATABASE",
     items: [
       { label: "MySQL", Icon: SiMysql, color: "#4479A1" },
-      { label: "PostgreSQL", Icon: SiPostgresql, color: "#336791" },
+     
       { label: "MongoDB", Icon: SiMongodb, color: "#47A248" },
     ],
   },

@@ -4,10 +4,8 @@ export default function About() {
       {/* Main paragraph */}
       <div className="md:col-span-8">
         <p className="text-lg md:text-xl font-semibold leading-relaxed text-white">
-          I’m <span className="font-bold">Kaveesha</span>, a frontend developer who
-          builds clean interfaces, smooth motion, and systems that stay maintainable
-          over time. I care deeply about performance, accessibility, and shipping
-          features that genuinely help users.
+          I’m <span className="font-bold">Kaveesha</span>,a frontend-focused developer with full-stack experience.
+My strongest work lives on the frontend — crafting fast, accessible, and maintainable interfaces with smooth, purposeful motion that improves real user experiences
         </p>
       </div>
 
