@@ -1,0 +1,70 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Bitcount+Single&display=swap");
+
+:root { color-scheme: dark; }
+
+html, body { height: 100%; }
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: #07090d;
+  color: #e7e9ee;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.85);
+  outline-offset: 4px;
+}
+
+/* Matte film vibe */
+body {
+  background: #0b0d10;
+  color: #e7e9ee;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* reduces harsh contrast */
+* {
+  text-rendering: geometricPrecision;
+}
+/* Hide OS cursor when custom cursor is enabled */
+html.cursor-on,
+html.cursor-on body {
+  cursor: none !important;
+}
+
+html.cursor-on a,
+html.cursor-on button,
+html.cursor-on [role="button"],
+html.cursor-on input,
+html.cursor-on textarea,
+html.cursor-on select,
+html.cursor-on summary,
+html.cursor-on label {
+  cursor: none !important;
+}
+/* Always hide system cursor */
+html,
+body,
+* {
+  cursor: none !important;
+}
+/* Hide scrollbar everywhere */
+html {
+  scrollbar-width: none;       /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none;               /* Chrome, Safari, Edge */
+}
+
+body {
+  -ms-overflow-style: none;    /* IE / Edge legacy */
+}
