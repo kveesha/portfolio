@@ -1,4 +1,4 @@
-import Navbar from '@/components/Navbar'
+
 import Hero from '@/components/Hero'
 import Section from '@/components/Section'
 import Stats from '@/components/Stats'
@@ -7,7 +7,7 @@ import Stack from '@/components/Stack'
 import Experience from '@/components/Experience'
 import Projects from '@/components/Projects'
 import Contact from '@/components/Contact'
-import Footer from '@/components/Footer'
+
 import PageEnter from '@/components/PageEnter'
 
 export default function Home() {
