@@ -1,16 +1,24 @@
 @import "tailwindcss";
 @import url("https://fonts.googleapis.com/css2?family=Bitcount+Single&display=swap");
 
-:root { color-scheme: dark; }
+:root {
+  color-scheme: dark;
+}
 
-html, body { height: 100%; }
-html { scroll-behavior: smooth; }
 html,
-body  {overflow-x: hidden;}
+body {
+  height: 100%;
+  overflow-x: hidden;
+}
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* ---------------- THEME ---------------- */
 body {
   margin: 0;
-  background: #07090d;
+  background: #0b0d10; /* matte film vibe */
   color: #e7e9ee;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -21,52 +29,64 @@ body {
   outline-offset: 4px;
 }
 
-/* Matte film vibe */
-body {
-  background: #0b0d10;
-  color: #e7e9ee;
-  -webkit-font-smoothing: antialiased;
-}
-
 ::selection {
   background: rgba(255, 255, 255, 0.12);
 }
 
-/* reduces harsh contrast */
 * {
   text-rendering: geometricPrecision;
 }
-/* Hide OS cursor when custom cursor is enabled */
-html.cursor-on,
-html.cursor-on body {
-  cursor: none !important;
+
+/* ---------------- HIDE DEFAULT SCROLLBAR ---------------- */
+
+
+html {
+  scrollbar-width: none;
 }
 
-html.cursor-on a,
-html.cursor-on button,
-html.cursor-on [role="button"],
-html.cursor-on input,
-html.cursor-on textarea,
-html.cursor-on select,
-html.cursor-on summary,
-html.cursor-on label {
-  cursor: none !important;
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
-/* Always hide system cursor */
+
+
+body {
+  -ms-overflow-style: none;
+}
+
+/* ---------------- CUSTOM CURSOR SYSTEM ---------------- */
+
+
 html,
 body,
 * {
   cursor: none !important;
 }
-/* Hide scrollbar everywhere */
-html {
-  scrollbar-width: none;       /* Firefox */
+
+
+canvas {
+  pointer-events: none;
 }
 
-body::-webkit-scrollbar {
-  display: none;               /* Chrome, Safari, Edge */
+.no-scrollbar {
+  scrollbar-width: none;      /* Firefox */
+  -ms-overflow-style: none;   /* old Edge */
+}
+.no-scrollbar::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+/* Hide scrollbars everywhere (including scroll containers) */
+
+/* Firefox */
+* {
+  scrollbar-width: none;
 }
 
-body {
-  -ms-overflow-style: none;    /* IE / Edge legacy */
+/* Chrome/Edge/Safari/Brave */
+*::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
