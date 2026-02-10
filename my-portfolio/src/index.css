@@ -71,21 +71,21 @@ canvas {
 }
 
 .no-scrollbar {
-  scrollbar-width: none;      /* Firefox */
-  -ms-overflow-style: none;   /* old Edge */
+  scrollbar-width: none;      
+  -ms-overflow-style: none;   
 }
 .no-scrollbar::-webkit-scrollbar {
   width: 0;
   height: 0;
 }
-/* Hide scrollbars everywhere (including scroll containers) */
 
-/* Firefox */
+
+
 * {
   scrollbar-width: none;
 }
 
-/* Chrome/Edge/Safari/Brave */
+
 *::-webkit-scrollbar {
   width: 0;
   height: 0;
